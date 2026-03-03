@@ -36,7 +36,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
       <!-- Logo -->
       <router-link to="/"
         class="shrink-0 font-mono text-sm font-semibold text-zinc-900 dark:text-zinc-100 hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors duration-200 tracking-tight">
-        asliddin<span class="text-sky-500">.me</span>
+        asliddin<span class="text-teal-500">.me</span>
       </router-link>
 
       <!-- Desktop Nav pill -->

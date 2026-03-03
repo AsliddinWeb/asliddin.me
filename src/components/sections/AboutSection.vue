@@ -2,10 +2,10 @@
 import SectionWrapper from '@/components/ui/SectionWrapper.vue'
 
 const stats = [
-  { value: '3+',    label: 'Years Experience' },
-  { value: '10+',   label: 'Projects Shipped' },
-  { value: '3000+', label: 'Students Served' },
-  { value: '120+',  label: 'Mentored Devs' },
+  { value: '3+',    label: 'Years of Production Experience' },
+  { value: '20+',   label: 'Production-Ready Projects Delivered' },
+  { value: '3K+',   label: 'Students Using My Systems' },
+  { value: '120+',  label: 'Developers Mentored' },
 ]
 </script>
 

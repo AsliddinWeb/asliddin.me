@@ -13,6 +13,8 @@
   "dependencies": {
     "@fontsource/ibm-plex-mono": "^5.2.7",
     "@fontsource/inter": "^5.2.8",
+    "lucide-vue-next": "^0.576.0",
+    "simple-icons": "^16.10.0",
     "vue": "^3.5.29",
     "vue-router": "^5.0.3"
   },

@@ -33,14 +33,14 @@
   .dark ::-webkit-scrollbar-thumb { background: #3f3f46; }
 }
 
-/* Accent color — only hex, no oklch/lab */
-.text-accent   { color: #0EA5E9 !important; }
-.bg-accent     { background-color: #0EA5E9 !important; }
-.border-accent { border-color: #0EA5E9 !important; }
-.hover\:text-accent:hover   { color: #0EA5E9 !important; }
-.hover\:bg-accent:hover     { background-color: #0EA5E9 !important; }
-.hover\:border-accent:hover { border-color: #0EA5E9 !important; }
-.ring-accent   { --tw-ring-color: #0EA5E9 !important; }
+/* Accent color */
+.text-accent   { color: #14B8A6 !important; }
+.bg-accent     { background-color: #14B8A6 !important; }
+.border-accent { border-color: #14B8A6 !important; }
+.hover\:text-accent:hover   { color: #14B8A6 !important; }
+.hover\:bg-accent:hover     { background-color: #14B8A6 !important; }
+.hover\:border-accent:hover { border-color: #14B8A6 !important; }
+.ring-accent   { --tw-ring-color: #14B8A6 !important; }
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }

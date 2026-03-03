@@ -3,24 +3,24 @@ import SectionWrapper from '@/components/ui/SectionWrapper.vue'
 import BlogItem from '@/components/ui/BlogItem.vue'
 
 const posts = [
-  {
-    date: '2024-03-10',
-    title: 'Docker for Backend Developers: Zero to Production',
-    description: 'Containerizing FastAPI apps, Docker Compose multi-service setups, and deploying with NGINX on a VPS.',
-    href: '#',
-  },
-  {
-    date: '2024-02-20',
-    title: 'PostgreSQL Query Optimization: Real-World Techniques',
-    description: 'EXPLAIN ANALYZE, index strategies, N+1 elimination, and connection pooling from production systems.',
-    href: '#',
-  },
-  {
-    date: '2024-01-15',
-    title: 'Django REST Framework Best Practices',
-    description: 'Structuring large DRF projects, serializer optimization, throttling, and API versioning strategies.',
-    href: '#',
-  },
+  // {
+  //   date: '2024-03-10',
+  //   title: 'Docker for Backend Developers: Zero to Production',
+  //   description: 'Containerizing FastAPI apps, Docker Compose multi-service setups, and deploying with NGINX on a VPS.',
+  //   href: '#',
+  // },
+  // {
+  //   date: '2024-02-20',
+  //   title: 'PostgreSQL Query Optimization: Real-World Techniques',
+  //   description: 'EXPLAIN ANALYZE, index strategies, N+1 elimination, and connection pooling from production systems.',
+  //   href: '#',
+  // },
+  // {
+  //   date: '2024-01-15',
+  //   title: 'Django REST Framework Best Practices',
+  //   description: 'Structuring large DRF projects, serializer optimization, throttling, and API versioning strategies.',
+  //   href: '#',
+  // },
 ]
 </script>
 

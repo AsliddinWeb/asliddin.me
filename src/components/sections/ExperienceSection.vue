@@ -67,10 +67,10 @@ const experiences = [
           <div>
             <h3 class="font-semibold text-zinc-900 dark:text-zinc-100 text-sm">{{ exp.role }}</h3>
             <a v-if="exp.companyUrl" :href="exp.companyUrl" target="_blank" rel="noopener"
-              class="text-xs font-medium hover:underline" style="color:#0EA5E9;">
+              class="text-xs font-medium hover:underline" style="color:#14B8A6;">
               {{ exp.company }}
             </a>
-            <span v-else class="text-xs font-medium" style="color:#0EA5E9;">{{ exp.company }}</span>
+            <span v-else class="text-xs font-medium" style="color:#14B8A6;">{{ exp.company }}</span>
           </div>
 
           <ul class="flex flex-col gap-1.5">

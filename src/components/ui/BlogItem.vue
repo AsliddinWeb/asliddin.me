@@ -13,7 +13,7 @@ defineProps<{
     <div class="flex-1 flex flex-col gap-1">
       <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 leading-snug transition-colors duration-200"
         :style="{ color: undefined }"
-        onmouseenter="this.style.color='#0EA5E9'"
+        onmouseenter="this.style.color='#14B8A6'"
         onmouseleave="this.style.color=''">
         {{ title }}
       </h3>

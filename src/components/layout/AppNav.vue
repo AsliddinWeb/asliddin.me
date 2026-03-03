@@ -2,6 +2,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { useTheme } from '@/composables/useTheme'
+import { Sun, Moon, Menu, X } from 'lucide-vue-next'
 
 const { isDark, toggleTheme } = useTheme()
 const route = useRoute()
@@ -63,29 +64,16 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
         <button @click="toggleTheme"
           class="w-8 h-8 flex items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 shadow-sm transition-all duration-200"
           :aria-label="isDark ? 'Light mode' : 'Dark mode'">
-          <!-- Sun -->
-          <svg v-if="isDark" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
-          </svg>
-          <!-- Moon -->
-          <svg v-else xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
-          </svg>
+          <Sun v-if="isDark" class="w-3.5 h-3.5" />
+          <Moon v-else class="w-3.5 h-3.5" />
         </button>
 
         <!-- Mobile hamburger -->
         <button @click="mobileOpen = !mobileOpen"
           class="md:hidden w-8 h-8 flex items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 shadow-sm transition-all duration-200"
           aria-label="Menu">
-          <svg v-if="!mobileOpen" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <line x1="3" y1="5"  x2="21" y2="5"/>
-            <line x1="3" y1="12" x2="21" y2="12"/>
-            <line x1="3" y1="19" x2="21" y2="19"/>
-          </svg>
-          <svg v-else xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <line x1="18" y1="6" x2="6"  y2="18"/>
-            <line x1="6"  y1="6" x2="18" y2="18"/>
-          </svg>
+          <X v-if="mobileOpen" class="w-3.5 h-3.5" />
+          <Menu v-else class="w-3.5 h-3.5" />
         </button>
 
       </div>
